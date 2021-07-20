@@ -1,8 +1,9 @@
 package hu.tmx.shop.model;
 
 import hu.tmx.shop.service.UpKeep;
+import hu.tmx.shop.type.Sellable;
 
-public abstract class Product{
+public abstract class Product implements Sellable {
 
     private final String name;
     private final UpKeep upkeep = new UpKeep();
